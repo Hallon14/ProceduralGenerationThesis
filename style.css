@@ -182,6 +182,43 @@ a {
     padding: 28px;
     color: #65665f;
 }
+//TEST
+.gifTest {
+    position: relative;
+    width: 100%;
+    height: 570px;
+    overflow: hidden;
+
+    background-image: url("images/grassGif.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.gifTest::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+.gifTest > * {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.gifTest div {
+    align-self: center;
+    text-align: center;
+}
+//TEST END
 
 .visual-placeholder {
     position: relative;
