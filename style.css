@@ -183,39 +183,35 @@ a {
     color: #65665f;
 }
 //TEST
-.gifTest {
-    position: relative;
-    width: 100%;
-    height: 570px;
-    overflow: hidden;
-
-    background-image: url("images/grassGif.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+/* GIF figure container */
+.gif-placeholder {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     padding: 30px;
 }
 
-.gifTest::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    pointer-events: none;
+/* Stack the GIFs vertically */
+.gif-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
 
-.gifTest > * {
-    position: relative;
-    z-index: 1;
-    color: white;
+/* Individual GIF styling */
+.gif-stack img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
-.gifTest div {
-    align-self: center;
+.gif-placeholder strong {
     text-align: center;
 }
 //TEST END
