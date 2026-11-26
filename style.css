@@ -447,4 +447,11 @@ h3 {
     .site-footer {
         flex-direction: column;
     }
+
+    .project-visual {
+        background-image: url("images/wideshot.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
