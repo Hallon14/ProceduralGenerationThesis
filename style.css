@@ -182,7 +182,7 @@ a {
     padding: 28px;
     color: #65665f;
 }
-//TEST
+
 /* GIF figure container */
 .gif-placeholder {
     display: flex;
@@ -214,7 +214,7 @@ a {
 .gif-placeholder strong {
     text-align: center;
 }
-//TEST END
+
 
 .visual-placeholder {
     position: relative;
