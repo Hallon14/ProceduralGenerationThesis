@@ -409,11 +409,12 @@ h3 {
   }
 
   .hero-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: cover;
-    object-position: center;
-}
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 450px;
+      object-fit: contain;
+      margin: 0 auto;
+  }
 }
