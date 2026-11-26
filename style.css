@@ -184,8 +184,34 @@ a {
 }
 
 .visual-placeholder {
-    min-height: clamp(280px, 48vw, 570px);
-    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    height: 570px;
+    overflow: hidden;
+
+    background-image: url("images/wideshot.png")
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.visual-placeholder::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+.visual-placeholder > * {
+    position: relative;
+    z-index: 1;
+    color: white;
 }
 
 .visual-placeholder div {
