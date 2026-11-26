@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An investigation of variables for consistent game level design using procedural generation, by Otto Wendt.">
+  <title>Defining Level Character in Procedural Generation — Otto Wendt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top">OTTO WENDT / THESIS 2026</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#introduction">Introduction</a><a href="#research">Research</a><a href="#knowledge">Knowledge</a><a href="#report">Report</a><a href="#reflection">Reflection</a><a href="#sources">Sources</a>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero section-wrap">
+      <p class="eyebrow">GAME DEVELOPMENT · PROCEDURAL GENERATION · THESIS</p>
+      <h1>Defining <em>Level Character</em> in Procedural Generation</h1>
+      <p class="hero-subtitle">An Investigation of Variables for Consistent Game Level Design Using Procedural Generation</p>
+      <p class="hero-intro">How can procedural generation create worlds that feel familiar and distinctive, while still offering a different journey every time?</p>
+      <div class="hero-meta">
+        <div><span class="meta-label">AUTHOR</span><strong>Otto Wendt</strong></div>
+        <div><span class="meta-label">PROGRAMME</span><strong>YRGO Game Programmer · GP25</strong></div>
+        <div><span class="meta-label">PROJECT PERIOD</span><strong>12 Oct — 4 Dec 2026</strong></div>
+      </div>
+      <a class="text-link" href="#introduction">Explore the thesis <span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="visual-break" aria-label="Project visual">
+      <div class="visual-placeholder"><span class="placeholder-index">FIG. 01 / PROJECT VISUAL</span><div><p>THE GENERATED WORLD</p><small>Replace this area with a screenshot of your procedural level or world.</small></div></div>
+      <p class="image-caption">Figure 01 — [Add a caption describing the generated environment.]</p>
+    </section>
+    <section class="content-section section-wrap" id="introduction">
+      <div class="section-index">01 / INTRODUCTION</div><div class="section-content">
+        <h2>Introduction</h2>
+        <p>To finish the education at YRGO Game Programmer, this thesis explores how programmers can use procedural generation to create levels for players to explore.</p>
+        <p>The thesis work takes place over eight weeks, from Monday 12 October to Friday 4 December 2026.</p>
+        <p>Variables that maintain characteristics across levels are researched, exploring what is needed to invoke a feeling of familiarity within the player—as if they had visited an area before, but the layout is not quite the same.</p>
+        <p>As exploration is a major part of video games, building a system that removes static world elements can create a refreshing experience for players. A static world can deny players the feeling of exploration and lower the replayability of the finished product. As players memorise static worlds, they may already know the outcome when they encounter a specific scenario.</p>
+        <p>Procedurally generating worlds that maintain character can improve replayability while limiting the player's expectations of specific scenarios, enemies, and other encounters.</p>
+      </div>
+    </section>
+    <section class="content-section section-wrap" id="research-question">
+      <div class="section-index">02 / RESEARCH QUESTION</div><div class="section-content"><h2>The question</h2>
+        <div class="callout"><span class="meta-label">MAIN RESEARCH QUESTION</span><p>How do you develop a system that procedurally generates playable worlds while maintaining a certain character for that world?</p></div>
+      </div>
+    </section>
+    <section class="content-section section-wrap" id="research">
+      <div class="section-index">03 / RESEARCH</div><div class="section-content">
+        <h2>Procedural worlds, different approaches</h2>
+        <p>There are several ways of using procedural generation to construct a map or level for players to explore. A few examples illustrate how different games use different techniques to create variation and structure.</p>
+        <div class="example-list">
+          <article class="example"><span class="example-number">01</span><div><h3>Minecraft</h3><p><em>Minecraft</em> uses Perlin noise to generate a heightmap that determines features such as hills. Other parameters determine which biome the player is currently in and how that biome should be generated. Minecraft uses a seed to reproduce the same random generation whenever that seed is selected.</p></div></article>
+          <article class="example"><span class="example-number">02</span><div><h3>The Binding of Isaac</h3><p><em>The Binding of Isaac</em> uses procedural generation to form dungeons for the player to access and explore.</p></div></article>
+          <article class="example"><span class="example-number">03</span><div><h3>Townscaper</h3><p><em>Townscaper</em> uses another form of procedural generation known as Wave Function Collapse to generate its world.</p></div></article>
+          <article class="example"><span class="example-number">04</span><div><h3>Windblown</h3><p><em>Windblown</em> is the game that has provided the greatest inspiration for the system developed in this project. Its approach to world generation is the main focus of this research.</p></div></article>
+        </div>
+        <h3>Studying Windblown's structure</h3>
+        <p>Looking more closely at world generation in <em>Windblown</em>, it becomes clear that certain elements are static. Every starting area and boss arena always look the same, along with a number of larger islands. However, the path the player takes to reach each location changes with every run.</p>
+        <p><em>Windblown</em> achieves this by placing static elements first, then procedurally generating paths that connect the larger islands. This is the focus of the research in this project.</p>
+        <p>Visual elements help players understand that, when entering a particular area, they can expect a certain kind of environment. The underlying paths also have distinct characters depending on the area. A journey through the factory world takes the player along ziplines because play areas are located at significantly different heights on the Y-axis. The sanctuary world, by contrast, is generally more square in shape, with straight paths and 90-degree turns.</p>
+        <p>Even with the graphical elements removed, a player can recognise that each world is unique in its own way. This suggests that level character can be communicated not only through visual decoration, but also through the structure and shape of the paths themselves.</p>
+        <div class="media-placeholder"><span class="placeholder-index">FIG. 02 / REFERENCE ANALYSIS</span><strong>Compare the character of different paths</strong><small>Add your own sketches, diagrams, or annotated examples that illustrate the contrast between areas.</small></div>
+      </div>
+    </section>
+    <section class="content-section section-wrap" id="knowledge"><div class="section-index">04 / TRANSMISSION OF KNOWLEDGE</div><div class="section-content"><h2>Transmission of knowledge</h2><p class="pending-note">This section is awaiting content.</p><p>[Describe what knowledge, methods, or insights from the research can be shared with other game programmers and procedural-generation developers.]</p></div></section>
+    <section class="content-section section-wrap" id="report"><div class="section-index">05 / REPORT</div><div class="section-content"><h2>Report</h2><p class="pending-note">This section is awaiting content.</p><p>[Add the development process, system architecture, implementation details, experiments, and results. Include screenshots and diagrams where they help explain the work.]</p></div></section>
+    <section class="content-section section-wrap" id="reflection"><div class="section-index">06 / REFLECTION</div><div class="section-content"><h2>Reflection</h2><p class="pending-note">This section is awaiting content.</p><p>[Reflect on the outcome, what worked, what did not, limitations, and what you would investigate or improve next.]</p></div></section>
+    <section class="content-section section-wrap" id="sources"><div class="section-index">07 / SOURCES</div><div class="section-content"><h2>Sources</h2><p class="pending-note">Add your complete reference list here.</p><ol class="references"><li>[Add each source using the citation style required by YRGO.]</li></ol><div class="download-row"><div><span class="meta-label">FULL THESIS</span><strong>Read the complete paper</strong></div><a class="button-link" href="documents/thesis.pdf">Download PDF ↗</a></div></div></section>
+  </main>
+  <footer class="site-footer"><span>DEFINING LEVEL CHARACTER IN PROCEDURAL GENERATION</span><span>OTTO WENDT · YRGO GP25 · 2026</span><a href="#top">Back to top ↑</a></footer>
+  <script src="js/script.js"></script>
+</body></html>
