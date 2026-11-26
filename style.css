@@ -190,24 +190,24 @@ a {
     align-items: center;
     gap: 20px;
     padding: 30px;
+    background: #e4e1d8;
+    border: none;
 }
 
-/* Stack the GIFs vertically */
 .gif-stack {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 12px;
     width: 100%;
+    flex: 1;
 }
 
-/* Individual GIF styling */
 .gif-stack img {
     display: block;
     width: 100%;
-    max-width: 650px;
-    height: auto;
-    object-fit: contain;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
     border-radius: 4px;
 }
 
