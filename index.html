@@ -59,20 +59,25 @@
 <p>Furthermore, hierarchical nodes and rule-based candidate selection demonstrate how structured relationships and placement constraints can contribute to consistent procedural level generation. Considerations such as player movement capabilities, available space and object accessibility also highlight the importance of incorporating gameplay requirements into the generation process, rather than treating level generation as a purely geometric or visual task.</p></div></section>
 
 <section class="content-section section-wrap" id="knowledge">
+  
+  <div class="knowledge-layout">
+    <div class="knowledge-sidebar">
+      <div class="section-index">04 / TRANSMISSION OF KNOWLEDGE</div>
+      
+        <div class="knowledge-images">
+            <img src="images/progress1.png" alt="Floating island generator">
+            <img src="images/progress2.png" alt="Generated island platforms">
+            <img src="images/progress3.png" alt="Spline connections between islands">
+        </div>
+      
+      </div>
 
-    <div class="section-index">04 / TRANSMISSION OF KNOWLEDGE</div>
-
+      
     <div class="section-content">
 
         <h2>Transmission of knowledge</h2>
 
-        <div class="knowledge-layout">
 
-            <div class="knowledge-images">
-                <img src="images/progress1.png" alt="Floating island generator">
-                <img src="images/progress2.png" alt="Generated island platforms">
-                <img src="images/progress3.png" alt="Spline connections between islands">
-            </div>
 
             <div class="knowledge-text">
 
@@ -92,7 +97,6 @@
                 <p>Another challenge involved the use of angles when calculating random directions. Unity's trigonometric functions operate using radians, whereas angles are often conceptualised in degrees during level design. Confusing these representations can produce unexpected positioning behaviour. Resolving this issue reinforced the importance of understanding the mathematical operations underlying procedural placement.</p>
                 <p>Developing spline connections also highlighted the importance of maintaining correct references between generated objects. The spline must use the positions of instantiated platforms rather than their original prefab references. Similarly, collections must be initialised before generated objects are added to them. Procedural systems introduce dependencies between objects and generation stages, making the organisation and management of references particularly important.</p>
                 <p>Finally, separating the generation process into individual methods made the system easier to develop and debug. Operations such as spawning static elements, generating intermediate platforms and constructing spline connections could be tested independently. This modular approach reduces complexity and makes it easier to identify errors as new functionality is introduced.</p>
-
             </div>
         </div>
     </div>
