@@ -220,37 +220,36 @@ a {
 
 /* Chapter 05 - Custom layout */
 
-#report .report-block {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 25px;
-    align-items: start;
-    margin: 30px 0 55px;
+.report-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-#report .report-image {
+.report-images {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.report-images figure {
     margin: 0;
-    padding: 15px;
-    background: #e4e1d8;
-    border: 1px solid var(--line);
+    width: 100%;
 }
 
-#report .report-image img {
+.report-images img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-#report .report-image figcaption {
+.report-images figcaption {
     margin-top: 10px;
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: 0.7rem;
+    line-height: 1.6;
     color: var(--muted);
-}
-
-#report .report-text {
-    min-width: 0;
 }
 
 /* Chapter 06 custom layout */
