@@ -212,6 +212,14 @@ a {
     border: 1px solid var(--line);
 }
 
+#knowledge .knowledge-images figcaption {
+    margin-top: 10px;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
 #knowledge .section-content {
     width: 100%;
     max-width: 720px;
@@ -299,6 +307,14 @@ a {
     width: 100%;
     max-width: 720px;
     min-width: 0;
+}
+
+#reflection .reflection-images figcaption {
+    margin-top: 10px;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    line-height: 1.6;
+    color: var(--muted);
 }
 
 /* GIF figure container */
