@@ -190,7 +190,7 @@ a {
     align-items: center;
     gap: 15px;
     padding: 20px;
-    background: var(--paper);
+    background: #e4e1d8;
     border: 1px solid var(--line);
     height: auto;
 }
