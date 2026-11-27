@@ -218,73 +218,41 @@ a {
     min-width: 0;
 }
 
-/* Chapter 05 - Custom layout */
+/* Chapter 05 custom layout */
 
-.report-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+#report {
+    grid-template-columns: 1fr 2.4fr;
+    gap: 7%;
 }
 
-.report-images {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-.report-images figure {
-    margin: 0;
-    width: 100%;
-}
-
-.report-images img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.report-images figcaption {
-    margin-top: 10px;
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    line-height: 1.6;
-    color: var(--muted);
-}
-
-/* REPORT SUBSECTIONS */
-
-.report-subsection {
-    display: grid;
-    grid-template-columns: 220px minmax(0, 1fr) ;
-    gap: 32px;
-    align-items: start;
-    margin-top: 48px;
-}
-
-.report-text {
+#report .report-sidebar {
     min-width: 0;
 }
 
-.report-text h3 {
-    margin-top: 0;
+#report .report-images {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 35px;
 }
 
-.report-figure {
+#report .report-images figure {
     margin: 0;
     width: 100%;
-    position: sticky;
-    top: 110px;
 }
 
-.report-figure img {
+#report .report-images img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
+
+    padding: 20px;
+    background: #e4e1d8;
+    border: 1px solid var(--line);
 }
 
-.report-figure figcaption {
+#report .report-images figcaption {
     margin-top: 10px;
     font-family: var(--mono);
     font-size: 0.7rem;
@@ -292,20 +260,11 @@ a {
     color: var(--muted);
 }
 
-/* MOBILE */
-
-@media (max-width: 700px) {
-    .report-subsection {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .report-figure {
-        position: static;
-        max-width: 400px;
-    }
+#report .section-content {
+    width: 100%;
+    max-width: 720px;
+    min-width: 0;
 }
-
 
 /* Chapter 06 custom layout */
 
