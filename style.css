@@ -197,7 +197,7 @@ a {
 #knowledge .knowledge-images {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 500px;
     margin-top: 35px;
 }
 
