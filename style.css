@@ -188,29 +188,39 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 30px;
+    gap: 15px;
+    padding: 20px;
     background: transparent;
     border: none;
+    height: auto;
 }
 
+/* Figure label */
+.visual-placeholder-label {
+    align-self: flex-start;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+}
+
+/* GIF layout */
 .gif-stack {
     display: flex;
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    flex: 1;
+    height: 570px;
 }
 
+/* GIFs fill the available space */
 .gif-stack img {
-    display: block;
     width: 100%;
-    flex: 1;
-    min-height: 0;
+    height: calc(50% - 6px);
     object-fit: cover;
-    border-radius: 4px;
+    display: block;
 }
 
+/* Figure caption */
 .gif-placeholder strong {
     text-align: center;
 }
