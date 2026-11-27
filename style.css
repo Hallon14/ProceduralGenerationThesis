@@ -185,10 +185,12 @@ a {
 
 #knowledge .knowledge-layout {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 220px minmax(0, 1fr);
     gap: 40px;
-    align-items: start;
+
     width: 100%;
+    max-width: 100%;
+    align-items: start;
 }
 
 #knowledge .knowledge-sidebar {
@@ -208,11 +210,12 @@ a {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: contain;
 }
 
 #knowledge .section-content {
+    width: 100%;
     min-width: 0;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
