@@ -424,38 +424,7 @@
         
         <section class="content-section section-wrap" id="report">
         
-            <div class="report-sidebar">
-        
-                <div class="section-index">
-                    05 / REPORT
-                </div>
-        
-                <div class="report-images">
-        
-                    <figure>
-                        <img src="images/worldRule.png" alt="World Rule ScriptableObject settings">
-                        <figcaption>
-                            Figure 05 — World Rule configuration.
-                        </figcaption>
-                    </figure>
-        
-                    <figure>
-                        <img src="images/tile.png" alt="A Generated Tile">
-                        <figcaption>
-                            Figure 06 — One tile generated using the system.
-                        </figcaption>
-                    </figure>
-        
-                    <figure>
-                        <img src="images/Variation.gif" alt="GIF of small changes in parameter values">
-                        <figcaption>
-                            Figure 07 — GIF of small changes in parameter values.
-                        </figcaption>
-                    </figure>
-        
-                </div>
-        
-            </div>
+            <div class="section-index">05 / REPORT</div>
         
             <div class="section-content">
 
@@ -478,6 +447,9 @@
                     <li><strong>World Generator</strong></li>
                     <li><strong>Mesh Generator</strong></li>
                 </ul>
+
+                <div class="report-subsection">
+                    <div class="report-text">
 
 
                 <h3>World Rule</h3>
@@ -514,6 +486,17 @@
                     An advantage of this approach is its scalability. New world variations can be introduced by creating additional World Rule assets and adjusting their parameters. Designers can therefore experiment with different environmental characteristics while retaining a consistent underlying generation system.
                 </p>
 
+                    </div>
+
+                    <figure class="report-figure">
+                        <img src="images/worldRule.png" alt="World Rule parameters">
+                        <figcaption>Figure x - Description</figcaption>
+                    </figure>
+                </div>
+
+                <div class="report-subsection">
+                    <div class="report-text">
+
 
                 <h3>World Generator</h3>
 
@@ -548,6 +531,11 @@
                 <p>
                     The World Generator therefore acts as the structural foundation of the system. It establishes the overall layout, determines how sections connect and ensures that the generated environment follows the constraints defined by the World Rule.
                 </p>
+                    </div>
+                </div>
+
+                <div class="report-subsection">
+                    <div class="report-text">
 
 
                 <h3>Mesh Generator</h3>
@@ -575,6 +563,19 @@
                 <p>
                     The Mesh Generator operates on a smaller scale than the World Generator. While the World Generator determines the overall structure and layout, the Mesh Generator focuses on the visual characteristics of individual elements. Together, these systems introduce variation at both the macro and micro levels.
                 </p>
+                    <figure class="report-figure">
+                        <img src=images/tile.png" alt="One generated tile">
+                        <figcaption>Figure x - Description</figcaption>
+                    </figure>
+
+                    <figure class="report-figure">
+                        <img src=images/Variation.gif" alt="Small changes in paramter values">
+                        <figcaption>Figure x - Description</figcaption>
+                    </figure>
+                    </div>
+                </div>
+
+                        
 
 
                 <h3>Summary</h3>
